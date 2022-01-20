@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<h2>{{ the_title }}</h2>
+
+	<form method='POST' action='/search4'>
+	<table>
+		<p>Ипользуйте форму ниже, чтобы получить информацию о гласных в введеном вами слове</p>
+		<tr><td>Phrase: </td><td><input name='phrase' type='text' widht='60'></td></tr>
+		<tr><td>Letters: </td><td><input name='letters' type='text' value='aeiou'></td></tr>
+	</table>
+	<p>Когда введете, нажмите на кнопку:</p>
+	<p><input value='Сделаем это!' type = 'submit'></p>
+	</form>
+{% endblock %}
